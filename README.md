@@ -43,3 +43,17 @@
   - app.use(wirteNotFoundMiddleware)
 - Create index route
   - routes folder separate and index.ts file
+
+### Covered topics in Module 12
+
+- Higher Order Function
+  - A function that takes a function, do some task and return a function
+  - By using catchAsync() higher order function we can get rid from try-catch repetation
+  - By using validateRequest() higher order fucntion we can make a middleware for validate user input.
+- Sanitizaation middleware --> validateRequest() function help us for make sanitization middleware
+- After express route we can pass only RequestHandler function, If we want to pass a normal funtion we must need to pass their higher order function which return RequestHandler function.
+- We need to keep relation between ER Diagram and Requirements analysis
+- Every common logic we should check on models middleware
+- For compare two data we can use custom mapper
+- .padString() --> It is a string operator. which ensure that a word contain minimum specified characters
+- lean() --> By default, Mongoose queries return an instance of the Mongoose Document class. Documents are much heavier than vanilla JavaScript objects, because they have a lot of internal state for change tracking. Enabling the lean option tells Mongoose to skip instantiating a full Mongoose document and just give you the POJO. It makes querying 5x faster than regular querying.
