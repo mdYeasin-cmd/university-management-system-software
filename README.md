@@ -57,3 +57,27 @@
 - For compare two data we can use custom mapper
 - .padString() --> It is a string operator. which ensure that a word contain minimum specified characters
 - lean() --> By default, Mongoose queries return an instance of the Mongoose Document class. Documents are much heavier than vanilla JavaScript objects, because they have a lot of internal state for change tracking. Enabling the lean option tells Mongoose to skip instantiating a full Mongoose document and just give you the POJO. It makes querying 5x faster than regular querying.
+
+### Covered topics in Module 13
+
+- A flow of start coding -> For a software below three steps should be sync
+  - Requirement Analysis
+  - ER Diagram
+  - Start Code
+- Transaction & Rollback
+  - 4 principles of transaction & rollback
+    - A --> Atomicity
+    - C --> Consistency
+    - I --> Isolation
+    - D --> Durability
+  - With all properties it called ACID properties
+  - For two or more database operation we should use transaction & rollback
+  - Transaction steps
+    - startSession()
+    - startTransaction()
+    - if all operation success --> commitTransaction()
+    - else --> abortTransaction()
+    - endSession()
+- Primitive fields can be muted but we should not muted the non-primitive fields
+- When we update a document, should not send all data to backend, it will use our network bandwidth. So, we should send only our necessary information.
+- We can extends our JavaScipt given class --> Error class is a example of that.
