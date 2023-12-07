@@ -81,3 +81,34 @@
 - Primitive fields can be muted but we should not muted the non-primitive fields
 - When we update a document, should not send all data to backend, it will use our network bandwidth. So, we should send only our necessary information.
 - We can extends our JavaScipt given class --> Error class is a example of that.
+
+### Covered topics in Module 14
+
+- What is error handling?
+- Types of errors
+  - Operational error
+  - Programmatical error
+  - Unhandled Rejection (Asynchronous Code)
+  - Uncaught Exception (Synchronous Code)
+- Unhandled Rejection and Uncaught Exception can be occur inside application or out site of the application
+- Different error comes with different pattern
+  - Zod error pattern
+  - Mongoose validation pattern
+  - Mongoose cast error pattern
+  - Mongoose duplicate error pattern
+- We should not send error stack in production frontend.
+- proccess.exit(1) --> For synchronous code
+- server.close(() => process.exit(1)) --> For asynchronous code
+- Global error handler can handle only application error.
+- For handle Unhandled Rejection and Uncaught Exception we will use server.ts file
+- Searching & Filtering
+  - Request Object in Express
+    - body: {}
+    - params: {}
+    - query: {}
+  - For filter we will use exact match
+  - For search term we will use partial match
+  - For query in database method chaining is an important thing
+  - Formula for pagination --> (page -1) \* limit
+- Some job performance good in functional approach and some job performance good in class based approach
+- We can made query builder for query in database using class
