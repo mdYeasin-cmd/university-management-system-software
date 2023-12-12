@@ -112,3 +112,16 @@
   - Formula for pagination --> (page -1) \* limit
 - Some job performance good in functional approach and some job performance good in class based approach
 - We can made query builder for query in database using class
+
+### Covered topics in Module 15
+
+- findOne() vs findById()
+  - findOne() --> When we use different types of property we can use findOne. Here included \_id also.
+  - findOneById() --> It use only for mongodb \_id
+- Above rules goes with
+  - findOneAndUpdate()
+  - findByIdAndUpdate()
+  - findOneAndDelete()
+  - findByIdAndDelete()
+- put method --> upsert: true --> If data already exist it will update and If data not exists it will create new data.
+- Delete, Remove, Pull all means same --> delete something
