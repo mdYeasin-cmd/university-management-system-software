@@ -125,3 +125,13 @@
   - findByIdAndDelete()
 - put method --> upsert: true --> If data already exist it will update and If data not exists it will create new data.
 - Delete, Remove, Pull all means same --> delete something
+
+### Covered topics in Module 17
+
+- What is Business Logic?
+  - Business logic in terms of software development refers to the set of rules, processes, and calculations that define how data is processed and manipulated within a software application to achieve specific business goals.
+- If we reference any field in database and we populate them when find --> and if we use filter query then there will be occur performance issue.
+- Technique
+  - A technique of time calculation is set a fixed date and use your time in date object.
+  - For avoid time conflict we need to compare database time and user requested time.
+- forEach() js method can't break a loop, if we need break in loop we should use "for of" loop
