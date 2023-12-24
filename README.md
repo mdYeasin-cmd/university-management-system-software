@@ -135,3 +135,32 @@
   - A technique of time calculation is set a fixed date and use your time in date object.
   - For avoid time conflict we need to compare database time and user requested time.
 - forEach() js method can't break a loop, if we need break in loop we should use "for of" loop
+
+### Covered topics in Module 18
+
+- Authentication --> Check authentication of a user.
+- Authorization --> Authorization means the power of a user.
+- JWT
+  - JWT has 3 part
+    1. header - It's include meta data about the token.
+    2. payload - Include the user information with iat and exp.
+    3. signature - It's a secret which preserved in frontend.
+  - We can save token in two places of frontend
+    1. Browser Cookie
+    2. Local Storage
+  - We will use below 3 function for implement JWT authentication
+    1. JWT.sign()
+    2. JWT.verify()
+    3. JWT.decode()
+  - Generate JWT secret
+    - require("crypto").randomBytes(32).toString("hex");
+  - We can use two types of token
+    1. Access Token --> It's expiration time is sort
+    2. Refresh Token --> It's expiration time is long
+  - Cookie is more secure than local storage
+- Spread operator vs Rest parameter
+  - Speard operator spread an array or object
+  - Rest parameter make an array by user given function parameter
+- Select Method
+  - We can make field filter explicitly from model using select property.
+  - By adding "+" sign we denote that we need all properties of that document.
