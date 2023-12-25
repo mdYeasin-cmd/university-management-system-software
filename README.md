@@ -164,3 +164,14 @@
 - Select Method
   - We can make field filter explicitly from model using select property.
   - By adding "+" sign we denote that we need all properties of that document.
+
+### Covered topics in Module 19
+
+- SMTP - Simple Mail Transfer Protocol
+- Way of keep image info in DB
+  - Base64 format
+  - Image Url Link
+- During change password - sending old password is a good practice for security
+- Technique
+  - If we send json string from frontend we can parse them by a middleware between auth and validation
+- We should concer always about our web security
