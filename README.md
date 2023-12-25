@@ -175,3 +175,11 @@
 - Technique
   - If we send json string from frontend we can parse them by a middleware between auth and validation
 - We should concer always about our web security
+
+### Covered topics in Module 20
+
+- If we want to calculation in different collection we can use aggregation. Aggregation have different type of elements which we can use for calculate different collection data. Some mentionable elements are -
+  1. $lookup
+  2. $unwind
+  3. $group
+- Every application has own business logic. So, business logic depend on application.
